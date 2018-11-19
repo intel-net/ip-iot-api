@@ -1,0 +1,45 @@
+{
+  "name": "CalculatedValue",
+  "plural": "CalculatedValues",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "datetime":{
+      "mssql":  {
+        "columnName": "timestamp"
+      },
+      "type": "date",
+      "required": "true"
+    },
+    "airflow":{
+      "type":"number",
+      "required": "false"
+    },
+    "temprm": {
+      "type": "number",
+      "required": "false"
+    },
+    "rhrm":{
+      "mssql":  {
+        "columnName": "rh-rm"
+      },
+      "type": "number",
+      "required": "false"
+    },
+    "co2":{
+      "type": "number",
+      "required": "false"
+    },
+    "totalheat":{
+      "type": "number",
+      "required": "false"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
